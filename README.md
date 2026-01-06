@@ -267,17 +267,17 @@ Use `'default'` for transport-specific defaults.
 
 See the `examples/` directory for complete examples:
 
-- [`basic-usage.ts`](file:///home/jdvsc/myLogger/examples/basic-usage.ts) - Basic logging patterns
-- [`advanced-config.ts`](file:///home/jdvsc/myLogger/examples/advanced-config.ts) - Advanced configuration
-- [`express-integration.ts`](file:///home/jdvsc/myLogger/examples/express-integration.ts) - Express.js integration
+- [`basic-usage.ts`](examples/basic-usage.ts) - Basic logging patterns
+- [`advanced-config.ts`](examples/advanced-config.ts) - Advanced configuration
+- [`express-integration.ts`](examples/express-integration.ts) - Express.js integration
 
 ## Documentation
 
-- [API Reference](file:///home/jdvsc/myLogger/docs/API.md)
-- [Configuration Guide](file:///home/jdvsc/myLogger/docs/CONFIGURATION.md)
-- [Transport Guide](file:///home/jdvsc/myLogger/docs/TRANSPORTS.md)
-- [Error Handling](file:///home/jdvsc/myLogger/docs/ERROR-HANDLING.md)
-- [Usage Examples](file:///home/jdvsc/myLogger/docs/EXAMPLES.md)
+[API Reference](docs/API.md)
+[Configuration Guide](docs/CONFIGURATION.md)
+[Transport Guide](docs/TRANSPORTS.md)
+[Error Handling](docs/ERROR-HANDLING.md)
+[Usage Examples](docs/EXAMPLES.md)
 
 ## Running Examples
 
@@ -302,8 +302,6 @@ The logger follows a **layered architecture**:
 2. **Utility Layer** - ID generation, serialization, validation
 3. **Transport Layer** - Individual transport implementations
 4. **Logger Layer** - Main logger and scoped logger classes
-
-See [`memory.md`](file:///home/jdvsc/myLogger/memory.md) for detailed architectural decisions.
 
 ## License
 
