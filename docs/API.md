@@ -1,6 +1,6 @@
 # API Reference
 
-Complete API documentation for jdlogger.
+Complete API documentation for vanta-logger.
 
 ## Table of Contents
 
@@ -188,7 +188,7 @@ try {
 Standalone function to create session IDs.
 
 ```typescript
-import { createSessionID } from "jdlogger";
+import { createSessionID } from "vanta-logger";
 
 const sessionID = createSessionID();
 ```
@@ -198,7 +198,7 @@ const sessionID = createSessionID();
 Standalone function to create error IDs.
 
 ```typescript
-import { createErrorID } from "jdlogger";
+import { createErrorID } from "vanta-logger";
 
 const errorID = createErrorID();
 ```
@@ -208,7 +208,7 @@ const errorID = createErrorID();
 Serializes an error into a structured ErrorObject.
 
 ```typescript
-import { serializeError } from "jdlogger";
+import { serializeError } from "vanta-logger";
 
 const errorObj = serializeError(unknownError, {
   stackLimit: 1000,
@@ -229,7 +229,7 @@ const errorObj = serializeError(unknownError, {
 Type guard to check if a value is error-like.
 
 ```typescript
-import { isErrorLike } from "jdlogger";
+import { isErrorLike } from "vanta-logger";
 
 if (isErrorLike(someValue)) {
   // TypeScript knows someValue is Error-like
@@ -241,7 +241,7 @@ if (isErrorLike(someValue)) {
 Validates session ID format.
 
 ```typescript
-import { isValidSessionID } from "jdlogger";
+import { isValidSessionID } from "vanta-logger";
 
 if (isValidSessionID(id)) {
   // id matches sid-* format
@@ -253,7 +253,7 @@ if (isValidSessionID(id)) {
 Validates error ID format.
 
 ```typescript
-import { isValidErrorID } from "jdlogger";
+import { isValidErrorID } from "vanta-logger";
 
 if (isValidErrorID(id)) {
   // id matches eid-* format
@@ -346,7 +346,7 @@ See [CONFIGURATION.md](docs/CONFIGURATION.md) for detailed transport configurati
 Default serialization limits.
 
 ```typescript
-import { DEFAULT_LIMITS } from "jdlogger";
+import { DEFAULT_LIMITS } from "vanta-logger";
 
 console.log(DEFAULT_LIMITS);
 // {
@@ -367,7 +367,7 @@ import {
   createErrorID,
   serializeError,
   isErrorLike,
-} from "jdlogger";
+} from "vanta-logger";
 
 // Create logger
 const logger = new Logger({

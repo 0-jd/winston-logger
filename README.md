@@ -1,4 +1,4 @@
-# Custom Winston Logger Boilerplate
+# Vanta Logger
 
 A production-ready, reusable Winston-based logger module with clean architecture, structured error logging, and comprehensive transport support.
 
@@ -24,7 +24,7 @@ npm run build
 ## Quick Start
 
 ```typescript
-import { Logger } from "jdlogger";
+import { Logger } from "vanta-logger";
 
 // Create logger instance
 const logger = new Logger({
@@ -56,7 +56,7 @@ Always create a single `Logger` instance and share it across your application:
 
 ```typescript
 // logger.ts
-import { Logger } from "jdlogger";
+import { Logger } from "vanta-logger";
 
 const logger = new Logger({
   service: "my-service",
@@ -229,7 +229,7 @@ log.error("API call failed", "api-client", {
 For complex or unknown errors, use `serializeError`:
 
 ```typescript
-import { serializeError } from "jdlogger";
+import { serializeError } from "vanta-logger";
 
 log.error("Unknown error", "handler", {
   error: serializeError(unknownValue),

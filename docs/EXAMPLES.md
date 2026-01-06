@@ -1,6 +1,6 @@
 # Usage Examples
 
-Real-world usage examples for jdlogger across different scenarios.
+Real-world usage examples for vanta-logger across different scenarios.
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ Complete Express.js integration with request logging, error handling, and sessio
 
 ```typescript
 import express from "express";
-import { Logger } from "jdlogger";
+import { Logger } from "vanta-logger";
 
 // Initialize logger
 const logger = new Logger({
@@ -201,7 +201,7 @@ process.on("SIGTERM", () => {
 Demonstrates session tracking across multiple service calls.
 
 ```typescript
-import { Logger } from "jdlogger";
+import { Logger } from "vanta-logger";
 import axios from "axios";
 
 const logger = new Logger({
@@ -357,7 +357,7 @@ async function rollbackOrder(orderId: string, sessionID: any) {
 Using logger in a background job processor with job-specific tracking.
 
 ```typescript
-import { Logger } from "jdlogger";
+import { Logger } from "vanta-logger";
 
 const logger = new Logger({
   service: "job-processor",
@@ -527,7 +527,7 @@ Logging WebSocket connections and messages.
 
 ```typescript
 import { WebSocketServer } from "ws";
-import { Logger } from "jdlogger";
+import { Logger } from "vanta-logger";
 
 const logger = new Logger({
   service: "websocket-server",
@@ -623,7 +623,7 @@ function handleMessage(ws: any, message: any, sessionID: any) {
 Configuration pattern for different environments.
 
 ```typescript
-import { Logger, LoggerConfig } from "jdlogger";
+import { Logger, LoggerConfig } from "vanta-logger";
 
 function createLogger(): Logger {
   const env = process.env.NODE_ENV || "development";

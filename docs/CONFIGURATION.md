@@ -1,6 +1,6 @@
 # Configuration Guide
 
-Comprehensive guide to configuring jdlogger.
+Comprehensive guide to configuring vanta-logger.
 
 ## Table of Contents
 

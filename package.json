@@ -1,6 +1,6 @@
 {
-  "name": "jdlogger",
-  "version": "1.0.0",
+  "name": "vanta-logger",
+  "version": "1.0.1",
   "description": "A reusable, production-ready Winston-based logger module with clean architecture",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,6 +1,6 @@
 # Error Handling Guide
 
-Comprehensive guide to error logging and serialization in jdlogger.
+Comprehensive guide to error logging and serialization in vanta-logger.
 
 ## Table of Contents
 
@@ -113,7 +113,7 @@ log.error("Error occurred", "handler", { error });
 For unknown or complex errors, use `serializeError`:
 
 ```typescript
-import { serializeError } from "jdlogger";
+import { serializeError } from "vanta-logger";
 
 try {
   throw { custom: "error", code: 500 }; // Non-Error object
@@ -129,7 +129,7 @@ try {
 Override default truncation limits:
 
 ```typescript
-import { serializeError } from "jdlogger";
+import { serializeError } from "vanta-logger";
 
 const error = new Error("Long stack trace error");
 
@@ -491,7 +491,7 @@ Set up monitoring and alerts:
 ## Complete Example
 
 ```typescript
-import { Logger, createSessionID, createErrorID } from "jdlogger";
+import { Logger, createSessionID, createErrorID } from "vanta-logger";
 import axios from "axios";
 
 const logger = new Logger({
