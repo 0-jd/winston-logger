@@ -1,4 +1,4 @@
-# myLogger
+# Custom Winston Logger Boilerplate
 
 A production-ready, reusable Winston-based logger module with clean architecture, structured error logging, and comprehensive transport support.
 
@@ -24,7 +24,7 @@ npm run build
 ## Quick Start
 
 ```typescript
-import { Logger } from "@mylogger/core";
+import { Logger } from "./mylogger/core";
 
 // Create logger instance
 const logger = new Logger({
