@@ -265,7 +265,7 @@ Use `'default'` for transport-specific defaults.
 
 ## Examples
 
-See the `examples/` directory for complete examples:
+See the `[examples/](examples)` directory for complete examples:
 
 - [`basic-usage.ts`](examples/basic-usage.ts) - Basic logging patterns
 - [`advanced-config.ts`](examples/advanced-config.ts) - Advanced configuration
