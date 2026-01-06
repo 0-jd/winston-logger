@@ -1,6 +1,6 @@
 # Configuration Guide
 
-Comprehensive guide to configuring myLogger.
+Comprehensive guide to configuring @0-jd/logger.
 
 ## Table of Contents
 

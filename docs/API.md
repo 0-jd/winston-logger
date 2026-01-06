@@ -1,6 +1,6 @@
 # API Reference
 
-Complete API documentation for myLogger.
+Complete API documentation for @0-jd/logger.
 
 ## Table of Contents
 
@@ -188,7 +188,7 @@ try {
 Standalone function to create session IDs.
 
 ```typescript
-import { createSessionID } from "@mylogger/core";
+import { createSessionID } from "@0-jd/logger";
 
 const sessionID = createSessionID();
 ```
@@ -198,7 +198,7 @@ const sessionID = createSessionID();
 Standalone function to create error IDs.
 
 ```typescript
-import { createErrorID } from "@mylogger/core";
+import { createErrorID } from "@0-jd/logger";
 
 const errorID = createErrorID();
 ```
@@ -208,7 +208,7 @@ const errorID = createErrorID();
 Serializes an error into a structured ErrorObject.
 
 ```typescript
-import { serializeError } from "@mylogger/core";
+import { serializeError } from "@0-jd/logger";
 
 const errorObj = serializeError(unknownError, {
   stackLimit: 1000,
@@ -229,7 +229,7 @@ const errorObj = serializeError(unknownError, {
 Type guard to check if a value is error-like.
 
 ```typescript
-import { isErrorLike } from "@mylogger/core";
+import { isErrorLike } from "@0-jd/logger";
 
 if (isErrorLike(someValue)) {
   // TypeScript knows someValue is Error-like
@@ -241,7 +241,7 @@ if (isErrorLike(someValue)) {
 Validates session ID format.
 
 ```typescript
-import { isValidSessionID } from "@mylogger/core";
+import { isValidSessionID } from "@0-jd/logger";
 
 if (isValidSessionID(id)) {
   // id matches sid-* format
@@ -253,7 +253,7 @@ if (isValidSessionID(id)) {
 Validates error ID format.
 
 ```typescript
-import { isValidErrorID } from "@mylogger/core";
+import { isValidErrorID } from "@0-jd/logger";
 
 if (isValidErrorID(id)) {
   // id matches eid-* format
@@ -335,7 +335,7 @@ interface ErrorObject {
 
 ### Transport Configurations
 
-See [CONFIGURATION.md](file:///home/jdvsc/myLogger/docs/CONFIGURATION.md) for detailed transport configuration types.
+See [CONFIGURATION.md](docs/CONFIGURATION.md) for detailed transport configuration types.
 
 ---
 
@@ -346,7 +346,7 @@ See [CONFIGURATION.md](file:///home/jdvsc/myLogger/docs/CONFIGURATION.md) for de
 Default serialization limits.
 
 ```typescript
-import { DEFAULT_LIMITS } from "@mylogger/core";
+import { DEFAULT_LIMITS } from "@0-jd/logger";
 
 console.log(DEFAULT_LIMITS);
 // {
@@ -367,7 +367,7 @@ import {
   createErrorID,
   serializeError,
   isErrorLike,
-} from "@mylogger/core";
+} from "@0-jd/logger";
 
 // Create logger
 const logger = new Logger({

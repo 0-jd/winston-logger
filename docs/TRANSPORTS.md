@@ -1,6 +1,6 @@
 # Transport Guide
 
-Detailed guide for each transport supported by myLogger.
+Detailed guide for each transport supported by @0-jd/logger.
 
 ## Table of Contents
 
@@ -344,7 +344,7 @@ Messages exceeding `maxMessageLength` are truncated with `...`.
 2. Click "New Webhook"
 3. Choose channel and name
 4. Copy webhook URL
-5. Add to myLogger configuration
+5. Add to @0-jd/logger configuration
 
 ---
 
@@ -409,7 +409,7 @@ sentry: {
 1. Create Sentry account at sentry.io
 2. Create new project
 3. Copy DSN from project settings
-4. Add to myLogger configuration
+4. Add to @0-jd/logger configuration
 
 ---
 
@@ -496,7 +496,7 @@ Then omit `keyFilename` from config.
 2. Enable Cloud Logging API
 3. Create service account with "Logs Writer" role
 4. Download service account key JSON
-5. Add to myLogger configuration
+5. Add to @0-jd/logger configuration
 
 ---
 
