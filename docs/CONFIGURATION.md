@@ -1,6 +1,6 @@
 # Configuration Guide
 
-Comprehensive guide to configuring @0-jd/logger.
+Comprehensive guide to configuring jdlogger.
 
 ## Table of Contents
 

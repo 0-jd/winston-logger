@@ -24,7 +24,7 @@ npm run build
 ## Quick Start
 
 ```typescript
-import { Logger } from "@0-jd/logger";
+import { Logger } from "jdlogger";
 
 // Create logger instance
 const logger = new Logger({
@@ -56,7 +56,7 @@ Always create a single `Logger` instance and share it across your application:
 
 ```typescript
 // logger.ts
-import { Logger } from "@0-jd/logger";
+import { Logger } from "jdlogger";
 
 const logger = new Logger({
   service: "my-service",
@@ -229,7 +229,7 @@ log.error("API call failed", "api-client", {
 For complex or unknown errors, use `serializeError`:
 
 ```typescript
-import { serializeError } from "@0-jd/logger";
+import { serializeError } from "jdlogger";
 
 log.error("Unknown error", "handler", {
   error: serializeError(unknownValue),

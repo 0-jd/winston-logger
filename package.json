@@ -1,5 +1,5 @@
 {
-  "name": "@0-jd/logger",
+  "name": "jdlogger",
   "version": "1.0.0",
   "description": "A reusable, production-ready Winston-based logger module with clean architecture",
   "main": "dist/index.js",

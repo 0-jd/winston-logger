@@ -1,6 +1,6 @@
 # API Reference
 
-Complete API documentation for @0-jd/logger.
+Complete API documentation for jdlogger.
 
 ## Table of Contents
 
@@ -188,7 +188,7 @@ try {
 Standalone function to create session IDs.
 
 ```typescript
-import { createSessionID } from "@0-jd/logger";
+import { createSessionID } from "jdlogger";
 
 const sessionID = createSessionID();
 ```
@@ -198,7 +198,7 @@ const sessionID = createSessionID();
 Standalone function to create error IDs.
 
 ```typescript
-import { createErrorID } from "@0-jd/logger";
+import { createErrorID } from "jdlogger";
 
 const errorID = createErrorID();
 ```
@@ -208,7 +208,7 @@ const errorID = createErrorID();
 Serializes an error into a structured ErrorObject.
 
 ```typescript
-import { serializeError } from "@0-jd/logger";
+import { serializeError } from "jdlogger";
 
 const errorObj = serializeError(unknownError, {
   stackLimit: 1000,
@@ -229,7 +229,7 @@ const errorObj = serializeError(unknownError, {
 Type guard to check if a value is error-like.
 
 ```typescript
-import { isErrorLike } from "@0-jd/logger";
+import { isErrorLike } from "jdlogger";
 
 if (isErrorLike(someValue)) {
   // TypeScript knows someValue is Error-like
@@ -241,7 +241,7 @@ if (isErrorLike(someValue)) {
 Validates session ID format.
 
 ```typescript
-import { isValidSessionID } from "@0-jd/logger";
+import { isValidSessionID } from "jdlogger";
 
 if (isValidSessionID(id)) {
   // id matches sid-* format
@@ -253,7 +253,7 @@ if (isValidSessionID(id)) {
 Validates error ID format.
 
 ```typescript
-import { isValidErrorID } from "@0-jd/logger";
+import { isValidErrorID } from "jdlogger";
 
 if (isValidErrorID(id)) {
   // id matches eid-* format
@@ -346,7 +346,7 @@ See [CONFIGURATION.md](docs/CONFIGURATION.md) for detailed transport configurati
 Default serialization limits.
 
 ```typescript
-import { DEFAULT_LIMITS } from "@0-jd/logger";
+import { DEFAULT_LIMITS } from "jdlogger";
 
 console.log(DEFAULT_LIMITS);
 // {
@@ -367,7 +367,7 @@ import {
   createErrorID,
   serializeError,
   isErrorLike,
-} from "@0-jd/logger";
+} from "jdlogger";
 
 // Create logger
 const logger = new Logger({

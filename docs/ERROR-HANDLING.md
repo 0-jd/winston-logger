@@ -1,6 +1,6 @@
 # Error Handling Guide
 
-Comprehensive guide to error logging and serialization in @0-jd/logger.
+Comprehensive guide to error logging and serialization in jdlogger.
 
 ## Table of Contents
 
@@ -113,7 +113,7 @@ log.error("Error occurred", "handler", { error });
 For unknown or complex errors, use `serializeError`:
 
 ```typescript
-import { serializeError } from "@0-jd/logger";
+import { serializeError } from "jdlogger";
 
 try {
   throw { custom: "error", code: 500 }; // Non-Error object
@@ -129,7 +129,7 @@ try {
 Override default truncation limits:
 
 ```typescript
-import { serializeError } from "@0-jd/logger";
+import { serializeError } from "jdlogger";
 
 const error = new Error("Long stack trace error");
 
@@ -491,7 +491,7 @@ Set up monitoring and alerts:
 ## Complete Example
 
 ```typescript
-import { Logger, createSessionID, createErrorID } from "@0-jd/logger";
+import { Logger, createSessionID, createErrorID } from "jdlogger";
 import axios from "axios";
 
 const logger = new Logger({
