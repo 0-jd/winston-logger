@@ -22,7 +22,7 @@
     "sentry",
     "gcp"
   ],
-  "author": "",
+  "author": "0-jd",
   "license": "MIT",
   "dependencies": {
     "winston": "^3.11.0",
