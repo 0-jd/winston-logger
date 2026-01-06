@@ -273,11 +273,11 @@ See the `examples/` directory for complete examples:
 
 ## Documentation
 
-[API Reference](docs/API.md)
-[Configuration Guide](docs/CONFIGURATION.md)
-[Transport Guide](docs/TRANSPORTS.md)
-[Error Handling](docs/ERROR-HANDLING.md)
-[Usage Examples](docs/EXAMPLES.md)
+- [API Reference](docs/API.md)
+- [Configuration Guide](docs/CONFIGURATION.md)
+- [Transport Guide](docs/TRANSPORTS.md)
+- [Error Handling](docs/ERROR-HANDLING.md)
+- [Usage Examples](docs/EXAMPLES.md)
 
 ## Running Examples
 
